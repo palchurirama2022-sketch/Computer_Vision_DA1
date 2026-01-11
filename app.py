@@ -157,13 +157,13 @@ if uploaded_file is not None:
         st.image(original, channels="BGR", width=700)
 
     with col2:
-        st.subheader("🧠 Processed Image with Detected Shapes")
+        st.subheader(" Processed Image with Detected Shapes")
         st.image(image, channels="BGR", width=700)
 
     # --------------------------------------------------
     # Results table
     # --------------------------------------------------
-    st.subheader("📊 Analysis Results")
+    st.subheader(" Analysis Results")
 
     if results:
         df = pd.DataFrame(results)
@@ -171,3 +171,4 @@ if uploaded_file is not None:
         st.dataframe(df, use_container_width=True)
     else:
         st.warning("No valid shapes detected.")
+
